@@ -22,12 +22,13 @@ object and snapshot structure.
 
 ```js
 stsApi.readOrgUnits(orgUnitIds)
-  => returns a promise that resolves to a map of objects
+  => // returns a promise that resolves to a map of objects
   {
       'some-uuid': {
           id: 'some-uuid',
           snapshot: {
               name: 'Name of Org Unit',
+              class: { id: '82c6cf1a-8992-4eb3-ba54-f813888ba98f' },
               Overordnet: { id: 'overordnet-uuid' }
           }
       }

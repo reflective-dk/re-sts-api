@@ -1,0 +1,22 @@
+{
+    "name": "re-sts-api",
+    "version": "0.1.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha --recursive test"
+    },
+    "author": "code@reflective.dk",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/reflective-dk/re-sts-api.git"
+    },
+    "dependencies": {
+        "bluebird": "^3.7.2",
+        "lodash": "^4.17.15",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-as-promised": "^7.1.1"
+    }
+}

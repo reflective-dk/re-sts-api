@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orgfunk:ListOutput xmlns:orgfaelles="urn:oio:sts:organisation:1.1.3.0" xmlns:orgfunk="urn:oio:sts:organisation:organisationfunktion:1.1.3.0" xmlns:part="urn:oio:sts:part:1.1.3.0" xmlns:sd="urn:oio:sagdok:3.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oio:sts:organisation:organisationfunktion:1.1.3.0 OrganisationFunktionOperationer.xsd ">
+  <sd:StandardRetur xsi:type="sd:StandardReturType">
+    <sd:StatusKode>0</sd:StatusKode>
+  </sd:StandardRetur>
+  {{#each orgFunctionSnapshots}}
+    {{xml}}
+  {{/each}}
+</orgfunk:ListOutput>

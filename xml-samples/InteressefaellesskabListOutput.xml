@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intfs:ListOutput xmlns:intfs="urn:oio:sts:organisation:interessefaellesskab:1.1.3.0" xmlns:orgfaelles="urn:oio:sts:organisation:1.1.3.0" xmlns:part="urn:oio:sts:part:1.1.3.0" xmlns:sd="urn:oio:sagdok:3.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oio:sts:organisation:interessefaellesskab:1.1.3.0 InteressefaellesskabOperationer.xsd ">
+  <sd:StandardRetur xsi:type="sd:StandardReturType">
+    <sd:StatusKode>0</sd:StatusKode>
+    <sd:FejlbeskedTekst>sd:FejlbeskedTekst</sd:FejlbeskedTekst>
+  </sd:StandardRetur>
+  <intfs:FiltreretOejebliksbillede>
+    <intfs:ObjektType xsi:type="sd:SagDokObjektType">
+      <sd:UUIDIdentifikator>sd:UUIDIdentifikator</sd:UUIDIdentifikator>
+    </intfs:ObjektType>
+    <intfs:Registrering>
+      <intfs:AttributListe/>
+      <intfs:TilstandListe/>
+      <intfs:RelationListe/>
+    </intfs:Registrering>
+  </intfs:FiltreretOejebliksbillede>
+</intfs:ListOutput>

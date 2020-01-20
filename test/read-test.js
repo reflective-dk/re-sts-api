@@ -1,12 +1,30 @@
 "use strict";
 
-global.global_logger = {
-    debug: arg => arg ? console.log(arg) : true
-};
+global.global_logger = { debug: arg => arg ? console.log(arg) : true };
 var Promise = require('bluebird');
 var chai = require('chai');
 chai.use(require('chai-as-promised'));
 var expect = chai.expect;
+
+var fs = require('fs');
+var path = require('path');
+var stsTestDataDir = 'test-data/sts';
+var stsTestTemplateDir = 'xml-templates';
+var stsObjects = {};
+fs.readdirSync(stsTestDataDir)
+    .map(fn => fs.readFileSync(path.join(stsTestDataDir, fn), 'utf-8'))
+    .forEach(function(xml) {
+        var id = /<sd:UUIDIdentifikator>(.+)<\/sd:UUIDIdentifikator>/.exec(xml)[1];
+        var registration = /<.+:Registrering>[\s\S]+<\/.+:Registrering>/.exec(xml)[0];
+        stsObjects[id] = { id: id, registration: registration };
+    });
+
+var templates = {};
+fs.readdirSync(stsTestTemplateDir)
+    .forEach(function(fn) {
+        var template = fs.readFileSync(path.join(stsTestTemplateDir, fn), 'utf-8');
+        templates[path.basename(fn, '.xml')] = template;
+    });
 
 var StsApi = require('../lib/sts-api');
 var stsApi = new StsApi({

@@ -3,12 +3,12 @@
   <sd:StandardRetur xsi:type="sd:StandardReturType">
     <sd:StatusKode>0</sd:StatusKode>
   </sd:StandardRetur>
-  {{#each snapshots}}
+  {{#each this}}
   <virksomhed:FiltreretOejebliksbillede>
     <virksomhed:ObjektType xsi:type="sd:SagDokObjektType">
       <sd:UUIDIdentifikator>{{id}}</sd:UUIDIdentifikator>
     </virksomhed:ObjektType>
-    {{registration}}
+    {{{registration}}}
   </virksomhed:FiltreretOejebliksbillede>
   {{/each}}
 </virksomhed:ListOutput>

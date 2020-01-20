@@ -1,0 +1,17 @@
+---
+id: authority-1
+snapshot:
+  LivscyklusKode: Opstaaet
+  RegistreringNoteTekst: a registration note
+  VirkningNoteTekst: a validity note
+  AktoerRef: organization-0
+  AktoerTypeKode: Organisation
+  BrugervendtNoegleTekst: external-id-authority-1
+  CVR-NummerTekst: '01234567'
+  NavnTekst: Authority 1
+  MyndighedsKode: '0123'
+from: '2020-01-01T00:00:00.000Z'
+author: organization-0
+registration:
+  timestamp: '2020-01-01T00:00:00.000Z'
+...

@@ -1,0 +1,60 @@
+---
+id: interest-group-0
+snapshot:
+  LivscyklusKode: Opstaaet
+  RegistreringNoteTekst: a registration note
+  VirkningNoteTekst: a validity note
+  AktoerRef: organization-0
+  AktoerTypeKode: Organisation
+  BrugervendtNoegleTekst: external-id-interest-group-0
+  InteressefaellesskabNavn: Interest Group 0
+  InteressefaellesskabTypeTekst: Skamløs Lobbyvirksomhed
+  GyldighedStatusKode: Aktiv
+  Adresser:
+    address-0: { id: address-0 }
+    address-1: { id: address-1 }
+  AdresseRoller:
+    # constant: addressRoleOrgUnitLocation
+    address-0: ec387d90-263c-4cce-8de2-63b407a0daac
+    # constant: addressRoleOrgUnitLocation
+    address-1: ec387d90-263c-4cce-8de2-63b407a0daac
+  AdresseTyper:
+    # constant: addressTypeOrgUnit - should there be one for interest group?
+    address-0: 9b33c0a0-a566-4ec0-8200-325cb1e5bb9a
+    # constant: addressTypeOrgUnit - should there be one for interest group?
+    address-1: 9b33c0a0-a566-4ec0-8200-325cb1e5bb9a
+  # reference to class in STS Klassifikation
+  Branche: { id: 2fb4e03b-b476-412b-8f77-461962811c31 }
+  # reference to class in STS Klassifikation
+  Interessefaellesskabstype: { id: 05e78c86-d964-460e-bfe8-da0b1a792920 }
+  Opgaver:
+    # reference to class in STS Klassifikation
+    574270b0-b524-491b-b15b-0e57af96a541: { id: 574270b0-b524-491b-b15b-0e57af96a541 }
+    6722d2c8-a0ba-4924-8bba-3337fc4c5e22: { id: 6722d2c8-a0ba-4924-8bba-3337fc4c5e22 }
+  Overordnet: { id: org-unit-0 }
+  Tilhoerer: { id: organization-0 }
+  TilknyttedeBrugere:
+    user-0: { id: user-0 }
+    user-1: { id: user-1 }
+  TilknyttedeEnheder:
+    org-unit-0: { id: org-unit-0 }
+    org-unit-1: { id: org-unit-1 }
+  TilknyttedeFunktioner:
+    org-function-0: { id: org-function-0 }
+    org-function-1: { id: org-function-1 }
+  TilknyttedeInteressefaellesskaber:
+    interest-group-1: { id: interest-group-1 }
+  TilknyttedeOrganisationer:
+    organization-0: { id: organization-0 }
+    organization-1: { id: organization-1 }
+  TilknyttedePersoner:
+    person-0: { id: person-0 }
+    person-1: { id: person-1 }
+  TilknyttedeItSystemer:
+    it-system-0: { id: it-system-0 }
+    it-system-1: { id: it-system-1 }
+from: '2020-01-01T00:00:00.000Z'
+author: organization-0
+registration:
+  timestamp: '2020-01-01T00:00:00.000Z'
+...

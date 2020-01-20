@@ -1,0 +1,18 @@
+---
+id: business-0
+snapshot:
+  LivscyklusKode: Opstaaet
+  RegistreringNoteTekst: a registration note
+  VirkningNoteTekst: a validity note
+  AktoerRef: organization-0
+  AktoerTypeKode: Organisation
+  BrugervendtNoegleTekst: external-id-business-0
+  CVR-NummerTekst: '01234567'
+  SE-NummerTekst: '98765432'
+  P-NummerTekst: '0123456789'
+  NavnTekst: Business 0
+from: '2020-01-01T00:00:00.000Z'
+author: organization-0
+registration:
+  timestamp: '2020-01-01T00:00:00.000Z'
+...

@@ -3,7 +3,12 @@
   <sd:StandardRetur xsi:type="sd:StandardReturType">
     <sd:StatusKode>0</sd:StatusKode>
   </sd:StandardRetur>
-  {{#each authoritySnapshots}}
-    {{xml}}
+  {{#each snapshots}}
+  <myndighed:FiltreretOejebliksbillede>
+    <myndighed:ObjektType xsi:type="sd:SagDokObjektType">
+      <sd:UUIDIdentifikator>{{id}}</sd:UUIDIdentifikator>
+    </myndighed:ObjektType>
+    {{registration}}
+  </myndighed:FiltreretOejebliksbillede>
   {{/each}}
 </myndighed:ListOutput>

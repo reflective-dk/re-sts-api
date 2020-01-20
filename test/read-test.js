@@ -6,10 +6,15 @@ var chai = require('chai');
 chai.use(require('chai-as-promised'));
 var expect = chai.expect;
 
+var Handlebars = require('handlebars');
 var fs = require('fs');
 var path = require('path');
+var requireyml = require('require-yml');
+
+var reflectiveTestDataDir = 'test-data/reflective';
+var reflectiveSnapshots = requireyml(reflectiveTestDataDir);
+
 var stsTestDataDir = 'test-data/sts';
-var stsTestTemplateDir = 'xml-templates';
 var stsObjects = {};
 fs.readdirSync(stsTestDataDir)
     .map(fn => fs.readFileSync(path.join(stsTestDataDir, fn), 'utf-8'))
@@ -19,6 +24,7 @@ fs.readdirSync(stsTestDataDir)
         stsObjects[id] = { id: id, registration: registration };
     });
 
+var stsTestTemplateDir = 'xml-templates';
 var templates = {};
 fs.readdirSync(stsTestTemplateDir)
     .forEach(function(fn) {
@@ -29,16 +35,18 @@ fs.readdirSync(stsTestTemplateDir)
 var StsApi = require('../lib/sts-api');
 var stsApi = new StsApi({
     stsHost: 'http://mock-sts-host',
-    request: mockRequestLib()
+    request: mockRequestPromiseLib()
 });
 
 describe('Read operations', function() {
     describe('readAddresses', function() {
         it('should return addresses', function(done) {
             expect(stsApi.readAddresses([
-                'address0', 'address1', 'unknown-object'
+                'address-0', 'address-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'address-0': reflectiveSnapshots['address-0'],
+                'address-1': reflectiveSnapshots['address-1']
             })
             .notify(done);
         });
@@ -145,5 +153,24 @@ describe('Read operations', function() {
 
 });
 
-function mockRequestLib() {
+function mockRequestPromiseLib() {
+    return function(options) {
+        options = options || {};
+        if ((options.method || '').toLowerCase() != 'post') {
+            return Promise.reject('invalid method: ' + options.method);
+        }
+        var ids;
+        try {
+            ids = options.body ? JSON.parse(options.body) : [];
+        } catch(e) {
+            return Promise.reject(e);
+        };
+        var template = compileTemplate(options.uri);
+        var objects = ids.map(id => stsObjects[id]).filter(o => o);
+        return Promise.resolve(template(objects));
+    };
+}
+
+function compileTemplate(uri) {
+    return Handlebars.compile(templates[/[^/]+$/.exec(uri)[0] + 'ListOutput']);
 }

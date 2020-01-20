@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person:Person xmlns:p="urn:oio:sts:1.1.3.0" xmlns:part="urn:oio:sts:part:1.1.3.0" xmlns:person="urn:oio:sts:organisation:person:1.1.3.0" xmlns:sd="urn:oio:sagdok:3.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oio:sts:organisation:person:1.1.3.0 Person.xsd ">
+  <sd:UUIDIdentifikator>person-1</sd:UUIDIdentifikator>
+  <person:Registrering>
+    <sd:NoteTekst>a registration note</sd:NoteTekst>
+    <sd:Tidspunkt>2020-01-01T00:00:00</sd:Tidspunkt>
+    <sd:LivscyklusKode>Opstaaet</sd:LivscyklusKode>
+    <sd:BrugerRef>
+      <sd:UUIDIdentifikator>author-0</sd:UUIDIdentifikator>
+    </sd:BrugerRef>
+    <person:AttributListe>
+      <person:Egenskab>
+        <sd:Virkning>
+          <sd:FraTidspunkt>
+            <sd:TidsstempelDatoTid>2020-01-01T00:00:00</sd:TidsstempelDatoTid>
+          </sd:FraTidspunkt>
+          <sd:TilTidspunkt/>
+          <sd:AktoerRef>
+            <sd:UUIDIdentifikator>organization-0</sd:UUIDIdentifikator>
+          </sd:AktoerRef>
+          <sd:AktoerTypeKode>Organisation</sd:AktoerTypeKode>
+          <sd:NoteTekst>a validity note</sd:NoteTekst>
+        </sd:Virkning>
+        <sd:BrugervendtNoegleTekst>external-id-person-1</sd:BrugervendtNoegleTekst>
+        <p:CPR-NummerTekst>1111111111</p:CPR-NummerTekst>
+        <person:NavnTekst>Person 1</person:NavnTekst>
+      </person:Egenskab>
+    </person:AttributListe>
+    <person:TilstandListe/>
+    <person:RelationListe/>
+  </person:Registrering>
+</person:Person>

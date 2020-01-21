@@ -1,13 +1,13 @@
 ---
-id: user-0
+id: user-1
 snapshot:
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note
   AktoerRef: organization-0
   AktoerTypeKode: Organisation
-  BrugervendtNoegleTekst: external-id-user-0
-  BrugerNavn: User 0
+  BrugervendtNoegleTekst: external-id-user-1
+  BrugerNavn: User 1
   BrugerTypeTekst: En avanceret superbruger
   GyldighedStatusKode: Aktiv
   Adresser:

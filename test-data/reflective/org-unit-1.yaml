@@ -1,40 +1,47 @@
 ---
-id: user-0
+id: org-unit-1
 snapshot:
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note
   AktoerRef: organization-0
   AktoerTypeKode: Organisation
-  BrugervendtNoegleTekst: external-id-user-0
-  BrugerNavn: User 0
-  BrugerTypeTekst: En avanceret superbruger
+  BrugervendtNoegleTekst: external-id-org-unit-1
+  EnhedNavn: Org Unit 1
   GyldighedStatusKode: Aktiv
   Adresser:
     address-0: { id: address-0 }
     address-1: { id: address-1 }
   AdresseRoller:
-    # constant: addressRoleUserLocation
-    address-0: ad04ac80-e24a-45a5-9dd9-8537a916ac74
-    # constant: addressRoleUserLocation
-    address-1: ad04ac80-e24a-45a5-9dd9-8537a916ac74
+    # constant: addressRoleOrgUnitLocation
+    address-0: ec387d90-263c-4cce-8de2-63b407a0daac
+    # constant: addressRoleOrgUnitLocation
+    address-1: ec387d90-263c-4cce-8de2-63b407a0daac
   AdresseTyper:
-    # constant: addressTypeUser
-    address-0: 71a08d28-3af7-4bb4-9964-bc2b76b93d64
-    # constant: addressTypeUser
-    address-1: 71a08d28-3af7-4bb4-9964-bc2b76b93d64
-  BrugerTyper:
-    # reference to class in STS Klassifikation
-    3f28b1f7-bf38-404e-9a9e-242dbb4c2ece: { id: 3f28b1f7-bf38-404e-9a9e-242dbb4c2ece }
-    0dc3580b-bab6-4632-8c68-bb96113b6e63: { id: 0dc3580b-bab6-4632-8c68-bb96113b6e63 }
+    # constant: addressTypeOrgUnit
+    address-0: 9b33c0a0-a566-4ec0-8200-325cb1e5bb9a
+    # constant: addressTypeOrgUnit
+    address-1: 9b33c0a0-a566-4ec0-8200-325cb1e5bb9a
+  Ansatte:
+    person-0: { id: person-0 }
+    person-1: { id: person-1 }
+  # reference to class in STS Klassifikation
+  Branche: { id: 0726b3de-b01c-4d05-866e-21677927a991 }
+  # reference to class in STS Klassifikation
+  Enhedstype: { id: 95abc951-2f2b-4a6b-9ac8-4542409310a2 }
   Opgaver:
     # reference to class in STS Klassifikation
-    30d2e276-8fda-4919-974e-a84b5db9487d: { id: 30d2e276-8fda-4919-974e-a84b5db9487d }
-    b89702c1-6333-45e7-818e-d0372b078314: { id: b89702c1-6333-45e7-818e-d0372b078314 }
+    5f87ff0c-a6aa-4ea0-b696-b363ea50d6af: { id: 5f87ff0c-a6aa-4ea0-b696-b363ea50d6af }
+    9a2b4c33-9d99-4be6-a42d-378eb3df90c4: { id: 9a2b4c33-9d99-4be6-a42d-378eb3df90c4 }
+  Overordnet: { id: org-unit-0 }
+  Produktionsenhed: { id: business-0 }
+  Skatteenhed: { id: business-1 }
   Tilhoerer: { id: organization-0 }
+  TilknyttedeBrugere:
+    user-0: { id: user-0 }
+    user-1: { id: user-1 }
   TilknyttedeEnheder:
     org-unit-0: { id: org-unit-0 }
-    org-unit-1: { id: org-unit-1 }
   TilknyttedeFunktioner:
     org-function-0: { id: org-function-0 }
     org-function-1: { id: org-function-1 }

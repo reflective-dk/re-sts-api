@@ -1,13 +1,13 @@
 ---
-id: organization-0
+id: organization-1
 snapshot:
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note
   AktoerRef: organization-0
   AktoerTypeKode: Organisation
-  BrugervendtNoegleTekst: external-id-organization-0
-  OrganisationNavn: Organization 0
+  BrugervendtNoegleTekst: external-id-organization-1
+  OrganisationNavn: Organization 1
   GyldighedStatusKode: Aktiv
   Adresser:
     address-0: { id: address-0 }
@@ -39,7 +39,7 @@ snapshot:
   Overordnet: { id: org-unit-0 }
   Produktionsenhed: { id: business-0 }
   Skatteenhed: { id: business-1 }
-  Tilhoerer: { id: organization-1 }
+  Tilhoerer: { id: organization-0 }
   TilknyttedeBrugere:
     user-0: { id: user-0 }
     user-1: { id: user-1 }
@@ -53,7 +53,7 @@ snapshot:
     interest-group-0: { id: interest-group-0 }
     interest-group-1: { id: interest-group-1 }
   TilknyttedeOrganisationer:
-    organization-1: { id: organization-1 }
+    organization-0: { id: organization-0 }
   TilknyttedePersoner:
     person-0: { id: person-0 }
     person-1: { id: person-1 }

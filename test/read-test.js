@@ -55,9 +55,11 @@ describe('Read operations', function() {
     describe('readAuthorities', function() {
         it('should return authorities', function(done) {
             expect(stsApi.readAuthorities([
-                'authority0', 'authority1', 'unknown-object'
+                'authority-0', 'authority-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'authority-0': reflectiveSnapshots['authority-0'],
+                'authority-1': reflectiveSnapshots['authority-1']
             })
             .notify(done);
         });
@@ -66,9 +68,11 @@ describe('Read operations', function() {
     describe('readBusinesses', function() {
         it('should return businesses', function(done) {
             expect(stsApi.readBusinesses([
-                'business0', 'business1', 'unknown-object'
+                'business-0', 'business-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'business-0': reflectiveSnapshots['business-0'],
+                'business-1': reflectiveSnapshots['business-1']
             })
             .notify(done);
         });
@@ -80,6 +84,8 @@ describe('Read operations', function() {
                 'interest-group-0', 'interest-group-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'interest-group-0': reflectiveSnapshots['interest-group-0'],
+                'interest-group-1': reflectiveSnapshots['interest-group-1']
             })
             .notify(done);
         });
@@ -88,9 +94,11 @@ describe('Read operations', function() {
     describe('readITSystems', function() {
         it('should return IT systems', function(done) {
             expect(stsApi.readITSystems([
-                'itsystem0', 'itsystem1', 'unknown-object'
+                'it-system-0', 'it-system-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'it-system-0': reflectiveSnapshots['it-system-0'],
+                'it-system-1': reflectiveSnapshots['it-system-1']
             })
             .notify(done);
         });
@@ -99,9 +107,11 @@ describe('Read operations', function() {
     describe('readOrganizations', function() {
         it('should return organizations', function(done) {
             expect(stsApi.readOrganizations([
-                'organization0', 'organization1', 'unknown-object'
+                'organization-0', 'organization-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'organization-0': reflectiveSnapshots['organization-0'],
+                'organization-1': reflectiveSnapshots['organization-1']
             })
             .notify(done);
         });
@@ -110,9 +120,11 @@ describe('Read operations', function() {
     describe('readOrgFunctions', function() {
         it('should return org functions', function(done) {
             expect(stsApi.readOrgFunctions([
-                'orgfun0', 'orgfun1', 'unknown-object'
+                'org-function-0', 'org-function-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'org-function-0': reflectiveSnapshots['org-function-0'],
+                'org-function-1': reflectiveSnapshots['org-function-1']
             })
             .notify(done);
         });
@@ -121,9 +133,11 @@ describe('Read operations', function() {
     describe('readOrgUnits', function() {
         it('should return org units', function(done) {
             expect(stsApi.readOrgUnits([
-                'orgunit0', 'orgunit1', 'unknown-object'
+                'org-unit-0', 'org-unit-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'org-unit-0': reflectiveSnapshots['org-unit-0'],
+                'org-unit-1': reflectiveSnapshots['org-unit-1']
             })
             .notify(done);
         });
@@ -132,9 +146,11 @@ describe('Read operations', function() {
     describe('readPeople', function() {
         it('should return people', function(done) {
             expect(stsApi.readPeople([
-                'person0', 'person1', 'unknown-object'
+                'person-0', 'person-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'person-0': reflectiveSnapshots['person-0'],
+                'person-1': reflectiveSnapshots['person-1']
             })
             .notify(done);
         });
@@ -143,9 +159,11 @@ describe('Read operations', function() {
     describe('readUsers', function() {
         it('should return users', function(done) {
             expect(stsApi.readUsers([
-                'user0', 'user1', 'unknown-object'
+                'user-0', 'user-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
+                'user-0': reflectiveSnapshots['user-0'],
+                'user-1': reflectiveSnapshots['user-1']
             })
             .notify(done);
         });

@@ -68,7 +68,7 @@
           <!-- constant: addressTypeUser -->
           <sd:UUIDIdentifikator>71a08d28-3af7-4bb4-9964-bc2b76b93d64</sd:UUIDIdentifikator>
         </sd:Type>
-        <sd:Indeks>0</sd:Indeks>
+        <sd:Indeks>address-0</sd:Indeks>
       </sd:Adresser>
       <sd:Adresser>
         <sd:Virkning>
@@ -93,7 +93,7 @@
           <!-- constant: addressTypeUser -->
           <sd:UUIDIdentifikator>71a08d28-3af7-4bb4-9964-bc2b76b93d64</sd:UUIDIdentifikator>
         </sd:Type>
-        <sd:Indeks>1</sd:Indeks>
+        <sd:Indeks>address-1</sd:Indeks>
       </sd:Adresser>
       <sd:BrugerTyper>
         <sd:Virkning>

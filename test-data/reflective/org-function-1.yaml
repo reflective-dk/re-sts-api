@@ -1,6 +1,8 @@
 ---
 id: org-function-1
 snapshot:
+  activeFrom: '2020-01-01T00:00:00.000Z'
+  name: Org Function 1
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note
@@ -22,8 +24,6 @@ snapshot:
     address-0: 1a8374f6-0ee8-4201-b27c-0e84d57db0ba
     # constant: addressTypeOrgFunction
     address-1: 1a8374f6-0ee8-4201-b27c-0e84d57db0ba
-  # reference to class in STS Klassifikation
-  Branche: { id: 2fb4e03b-b476-412b-8f77-461962811c31 }
   # reference to class in STS Klassifikation
   Funktionstype: { id: e6cc238a-6018-4ae2-b7ab-e2574099eeec }
   Opgaver:

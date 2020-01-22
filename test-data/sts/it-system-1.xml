@@ -69,7 +69,7 @@
           <!-- constant: addressTypeOrgUnit - should there be one for IT system? -->
           <sd:UUIDIdentifikator>9b33c0a0-a566-4ec0-8200-325cb1e5bb9a</sd:UUIDIdentifikator>
         </sd:Type>
-        <sd:Indeks>0</sd:Indeks>
+        <sd:Indeks>address-0</sd:Indeks>
       </sd:Adresser>
       <sd:Adresser>
         <sd:Virkning>
@@ -94,7 +94,7 @@
           <!-- constant: addressTypeOrgUnit - should there be one for IT system? -->
           <sd:UUIDIdentifikator>9b33c0a0-a566-4ec0-8200-325cb1e5bb9a</sd:UUIDIdentifikator>
         </sd:Type>
-        <sd:Indeks>1</sd:Indeks>
+        <sd:Indeks>address-1</sd:Indeks>
       </sd:Adresser>
       <sd:Opgaver>
         <sd:Virkning>

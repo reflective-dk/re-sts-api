@@ -1,6 +1,8 @@
 ---
 id: organization-1
 snapshot:
+  activeFrom: '2020-01-01T00:00:00.000Z'
+  name: Organization 1
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note
@@ -60,7 +62,7 @@ snapshot:
   TilknyttedeItSystemer:
     it-system-0: { id: it-system-0 }
     it-system-1: { id: it-system-1 }
-  Virksomhed: { id: buiness-0 }
+  Virksomhed: { id: business-0 }
   # reference to class in STS Klassifikation
   Virksomhedstype: { id: 850e29b1-a693-4bcf-b136-9b5de015e631 }
 from: '2020-01-01T00:00:00.000Z'

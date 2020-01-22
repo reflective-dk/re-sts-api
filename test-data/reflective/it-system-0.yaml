@@ -1,6 +1,8 @@
 ---
 id: it-system-0
 snapshot:
+  activeFrom: '2020-01-01T00:00:00.000Z'
+  name: IT System 0
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note
@@ -24,10 +26,6 @@ snapshot:
     address-0: 9b33c0a0-a566-4ec0-8200-325cb1e5bb9a
     # constant: addressTypeOrgUnit - should there be one for IT system?
     address-1: 9b33c0a0-a566-4ec0-8200-325cb1e5bb9a
-  # reference to class in STS Klassifikation
-  Branche: { id: 2fb4e03b-b476-412b-8f77-461962811c31 }
-  # reference to class in STS Klassifikation
-  Interessefaellesskabstype: { id: 05e78c86-d964-460e-bfe8-da0b1a792920 }
   Opgaver:
     # reference to class in STS Klassifikation
     d3bf30e2-6949-4764-880b-674e5baace97: { id: d3bf30e2-6949-4764-880b-674e5baace97 }

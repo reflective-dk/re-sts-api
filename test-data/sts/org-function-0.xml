@@ -67,7 +67,7 @@
           <!-- constant: addressTypeOrgFunction -->
           <sd:UUIDIdentifikator>1a8374f6-0ee8-4201-b27c-0e84d57db0ba</sd:UUIDIdentifikator>
         </sd:Type>
-        <sd:Indeks>0</sd:Indeks>
+        <sd:Indeks>address-0</sd:Indeks>
       </sd:Adresser>
       <sd:Adresser>
         <sd:Virkning>
@@ -92,7 +92,7 @@
           <!-- constant: addressTypeOrgFunction -->
           <sd:UUIDIdentifikator>1a8374f6-0ee8-4201-b27c-0e84d57db0ba</sd:UUIDIdentifikator>
         </sd:Type>
-        <sd:Indeks>1</sd:Indeks>
+        <sd:Indeks>address-1</sd:Indeks>
       </sd:Adresser>
       <sd:Funktionstype>
         <sd:Virkning>

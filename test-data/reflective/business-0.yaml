@@ -1,6 +1,8 @@
 ---
 id: business-0
 snapshot:
+  activeFrom: '2020-01-01T00:00:00.000Z'
+  name: Business 0
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note

@@ -1,6 +1,8 @@
 ---
 id: interest-group-1
 snapshot:
+  activeFrom: '2020-01-01T00:00:00.000Z'
+  name: Interest Group 1
   LivscyklusKode: Opstaaet
   RegistreringNoteTekst: a registration note
   VirkningNoteTekst: a validity note
@@ -43,7 +45,7 @@ snapshot:
     org-function-0: { id: org-function-0 }
     org-function-1: { id: org-function-1 }
   TilknyttedeInteressefaellesskaber:
-    interest-group-1: { id: interest-group-0 }
+    interest-group-0: { id: interest-group-0 }
   TilknyttedeOrganisationer:
     organization-0: { id: organization-0 }
     organization-1: { id: organization-1 }

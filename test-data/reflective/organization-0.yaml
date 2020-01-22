@@ -64,7 +64,7 @@ snapshot:
   # reference to class in STS Klassifikation
   Virksomhedstype: { id: 850e29b1-a693-4bcf-b136-9b5de015e631 }
 from: '2020-01-01T00:00:00.000Z'
-author: organization-0
+author: author-0
 registration:
   timestamp: '2020-01-01T00:00:00.000Z'
 ...

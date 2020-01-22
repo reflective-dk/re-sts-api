@@ -10,7 +10,7 @@ snapshot:
   CPR-NummerTekst: '1111111111'
   NavnTekst: Person 1
 from: '2020-01-01T00:00:00.000Z'
-author: organization-0
+author: author-0
 registration:
   timestamp: '2020-01-01T00:00:00.000Z'
 ...

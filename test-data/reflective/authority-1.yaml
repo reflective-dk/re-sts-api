@@ -11,7 +11,7 @@ snapshot:
   NavnTekst: Authority 1
   MyndighedsKode: '0123'
 from: '2020-01-01T00:00:00.000Z'
-author: organization-0
+author: author-0
 registration:
   timestamp: '2020-01-01T00:00:00.000Z'
 ...

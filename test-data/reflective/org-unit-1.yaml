@@ -58,7 +58,7 @@ snapshot:
     it-system-0: { id: it-system-0 }
     it-system-1: { id: it-system-1 }
 from: '2020-01-01T00:00:00.000Z'
-author: organization-0
+author: author-0
 registration:
   timestamp: '2020-01-01T00:00:00.000Z'
 ...

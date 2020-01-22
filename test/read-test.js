@@ -77,7 +77,7 @@ describe('Read operations', function() {
     describe('readInterestGroups', function() {
         it('should return interest groups', function(done) {
             expect(stsApi.readInterestGroups([
-                'intgroup0', 'intgroup1', 'unknown-object'
+                'interest-group-0', 'interest-group-1', 'unknown-object'
             ]))
             .to.eventually.deep.equal({
             })

@@ -207,7 +207,7 @@
           <sd:NoteTekst>a validity note</sd:NoteTekst>
         </sd:Virkning>
         <sd:ReferenceID>
-          <sd:UUIDIdentifikator>org-unit-1</sd:UUIDIdentifikator>
+          <sd:UUIDIdentifikator>org-unit-0</sd:UUIDIdentifikator>
         </sd:ReferenceID>
       </sd:Overordnet>
       <sd:Produktionsenhed>
@@ -239,7 +239,7 @@
           <sd:NoteTekst>a validity note</sd:NoteTekst>
         </sd:Virkning>
         <sd:ReferenceID>
-          <sd:UUIDIdentifikator>business-0</sd:UUIDIdentifikator>
+          <sd:UUIDIdentifikator>business-1</sd:UUIDIdentifikator>
         </sd:ReferenceID>
       </sd:Skatteenhed>
       <sd:Tilhoerer>
